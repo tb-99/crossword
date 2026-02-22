@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crossword</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Crossword</h1>
+      <p class="sub">Type letters. Use arrow keys. Click “Check” when done.</p>
+    </div>
+    <div class="actions">
+      <button id="regen">Regenerate</button>
+      <button id="check">Check</button>
+      <button id="reveal">Reveal</button>
+      <button id="clear">Clear</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section>
+      <div id="board" class="board" aria-label="Crossword grid"></div>
+    </section>
+
+    <aside class="clues">
+      <h2>Across</h2>
+      <ol id="across"></ol>
+      <h2>Down</h2>
+      <ol id="down"></ol>
+      <p class="note">
+        Note: multi-word answers are entered without spaces (e.g., CENTRALPARK).
+      </p>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
