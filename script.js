@@ -404,7 +404,6 @@ function regen() {
 
 document.getElementById("regen").addEventListener("click", regen);
 document.getElementById("check").addEventListener("click", () => checkAnswers(false));
-//document.getElementById("reveal").addEventListener("click", () => checkAnswers(true));
 document.getElementById("clear").addEventListener("click", clearGrid);
 
 regen();
